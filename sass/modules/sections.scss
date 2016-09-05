@@ -1,0 +1,61 @@
+// =================================================================
+// 	Mediapreview
+// 	Sections
+// =================================================================
+
+.hero {
+	background: $colorOne;
+	width: 100%;
+	padding: 100px 0;
+	min-height: 500px;
+	box-sizing: border-box;
+	height: auto;
+}
+
+.timings {
+	padding: 60px 0;
+
+	h1 {
+		color: $colorOne;
+		margin-bottom: 25px;
+	}
+
+	ul {
+		li {
+			width: 100%;
+			list-style-type: none;
+			border-bottom: 1px solid #F4F4F4;
+			height: auto;
+			overflow: auto;
+			padding: 20px 0;
+		}
+
+		li h3 {
+			color: $colorType;
+			display: block;
+			clear: both;
+			float: left;
+			margin-top: 5px;
+		}
+
+		li.header h3 {
+			clear: none;
+			color: $colorGrey;
+		}
+
+		li h3.client {
+			color: $colorTwo;
+		}
+
+		li .circle-image {
+			margin-right: 25px;
+		}
+
+		li span {
+			float: right;
+			margin-top: 7px;
+			display: block;
+			color: $colorGrey;
+		}
+	}
+}

@@ -1,0 +1,46 @@
+// =================================================================
+// 	Mediapreview
+// 	Footer
+// =================================================================
+
+footer {
+	padding: 25px 0 20px 0;
+	height: auto;
+	overflow: auto;
+
+	p, a {
+		padding: 0;
+		margin: 0;
+		font-size: 16px;
+		color: $colorGrey;
+	}
+
+	a:hover {
+		color: $colorType;
+	}
+
+	@include mq("small", "max-width") {
+		.col-4 {
+			width: 100%;
+			margin: 3px 0;
+			display: block;
+			clear: both;
+
+			p {
+				margin-bottom: 1px;
+				display: block;
+			}
+
+			a {
+				display: block;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	@include mq("extra-small", "max-width") {
+		p, a {
+			font-size: 1em;
+		}
+	}
+}

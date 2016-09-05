@@ -1,0 +1,247 @@
+// =================================================================
+// 	Mediapreview
+// 	Page Specific Styling
+// =================================================================
+
+// 	Homepage
+// =================================================================
+
+.home {
+	.discovery {
+		h1 {
+			padding: 10px 0;
+		}
+	}
+	.video {
+		h4 {
+			font-size: 1.424em;
+		}
+	}
+}
+
+// 	Video Production
+// =================================================================
+
+.about {
+	.hero {
+		
+	}
+}
+
+// 	Tutorial
+// =================================================================
+
+// 	Movie
+// =================================================================
+
+
+@include mq("small", "max-width") {
+	.movie .discovery .row .col-4:last-child {
+		display: none;
+	}
+}
+
+// 	Movies
+// =================================================================
+
+.movies .movie-picker-item p {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+// 	Distress
+// =================================================================s
+
+.distress {
+
+	.price {
+		float: left;
+		margin-left: 20px;
+		opacity: 1;
+		padding-top: 13px;
+	}
+
+	.link-btn-one {
+		float: left;
+		background: #fff;
+		color: $colorType;
+	}
+
+	.video {
+		padding-bottom: 25px;
+		padding-top: 120px;
+	}
+
+	h3 {
+		color: #fff;
+		margin-bottom: 25px;
+	}
+
+	h2 {
+		font-size: 1.2em;
+		padding-bottom: 0;
+	}
+
+	h4 {
+		margin-bottom: 30px;
+	}
+
+	.link-btn-two h4 {
+		margin-bottom: 0px;
+	}
+
+	.link-one {
+		display: block;
+		margin-top: 13px;
+		width: intrinsic;
+		float: left;
+	}
+
+	.hero {
+		padding: 50px 0 0 0;
+
+		h1 {
+			color: #fff;
+			position: relative;
+			text-align: center;
+			z-index: 10;
+		}
+
+
+		h4 {
+			color: #fff;
+			opacity: 1;
+			z-index: 10;
+			position: relative;
+			line-height: 1.4em;
+			text-align: center;
+		}
+
+		h2 {
+			position: relative;
+			z-index: 10;
+		}
+
+		.row {
+			padding-bottom: 75px;
+
+			&:first-child {
+				padding-bottom: 50px;
+			}
+		}
+	}
+
+	.movie-picker {
+		h3 {
+			color: $colorType;
+		}
+
+		h5 {
+			float: left;
+			margin-top: 20px;
+			border: 1px solid $colorGrey;
+		}
+
+		&:hover h5 {
+			background: #fff;
+			border: 1px solid $colorGrey;
+			color: $colorType;
+		}
+
+		h5.link-btn-fake {
+			float: right;
+			@include border-radius(2px);
+			background: #fff;
+			color: $colorType;
+			display: block;
+			width: intrinsic;
+			text-align: center;
+			color: $colorType;
+			text-transform: uppercase;
+			font-size: 0.833em;
+			letter-spacing: 1px;
+			background: $colorTwo;
+			border: 0;
+			color: #fff;
+		}
+	}
+}
+
+// 	Depot
+// =================================================================
+
+.depot {
+	.discovery .discovery-item {
+		margin-bottom: 0;
+		
+		@include mq("small", "max-width") {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.depot-collection {
+	.movie-picker {
+		padding: 0 0 0 0;
+
+		h5 {
+			margin-bottom: 24px;
+		}
+	}
+
+	.video-overlay {
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		z-index: 10; 
+		width: 100%; 
+		height: 100%; 
+	}
+}
+
+// 	Contact
+// =================================================================
+
+.contact {
+	
+	h4 {
+		margin-bottom: 25px;
+	}
+
+	a {
+		color: $colorType;
+		display: inline-block;
+		margin: 10px 0;
+		border-bottom: 2px solid $colorGrey;
+		padding-bottom: 3px;
+
+		&:hover {
+			border-bottom: 2px solid $colorType;
+
+		}
+	}
+
+	@include mq("small", "max-width") {
+		h4 {
+			margin-bottom: 10px;
+		}
+
+		a {
+			clear: both;
+			float: none;
+			width: intrinsic;
+			display: block;
+		}
+
+		#form-messages {
+			font-size: 14px;
+		}
+
+		.form-half {
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+
+}
+
